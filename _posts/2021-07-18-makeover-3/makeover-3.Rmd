@@ -109,6 +109,33 @@ Please view the interactive visualization on Tableau Public [<font color=grey>*h
 
 |No|Step| Action |
 |--|----|:------:|
-
-
-
+1|Download the *Standar Kelurahan Data Corona (30 Juni 2021 Pukul 10.00)* from the Open Data Covid-19 Provinsi DKI Jakarta website. Load the  excel file into Tableau Prep Builder. Drag the <font color = blue>*'data_kacamatan'*</font> into main pane.|![](img/img5.PNG)
+2|Initiate the cleaning node from <font color = blue>*'data_kacamatan'*</font> data node.| ![](img/img6.PNG)
+3|Under the <font color = blue>*‘Clean 1’*</font> node,remove useless variables.|![](img/img7.PNG) 
+4|Under <font color = blue>*‘Clean 1’*</font> node, filter the rows under <font color = blue>*‘Nama_provinsi’*</font> to choose <font color = blue>*'DKI Jakarta'*</font>.|![](img/img8.PNG) 
+5|Create a <font color = blue>*‘Output’*</font> node after <font color = blue>*‘Clean 1’*</font> node and save output as <font color = blue>*‘Output’*</font>.|![](img/img9.PNG)
+6|Import the data into Tableau.|![](img/img10.PNG)
+7|For chart 1, give the graph title called 'Cities with the number of cumulative deaths at 30th June 2021, DKI Jakarta'.|![](img/img11.PNG)
+8|Drag <font color = blue>*‘Longitude(generated)’*</font> to <font color = blue>*“Columns”*</font> and <font color = blue>*‘Latitude(generated)’*</font> to <font color = blue>*“Rows”*</font>.|![](img/img12.PNG)
+9|Set the <font color = blue>*"Nama Kota"*</font> variable role as <font color = blue>*"State/Province"*</font>.|![](img/img14.PNG)
+10|Set the <font color = blue>*"Nama Kecamatan"*</font> variable role as <font color = blue>*"City"*</font>.|![](img/img13.PNG)
+11|Drag <font color = blue>*"Nama Kecamatan"*</font> which is the name of cities as a layer.|![](img/img15.PNG)
+12|Edit map location.|![](img/img17.PNG)
+13|Under the map location pane, choose the country as "Indonesia".|![](img/img18.PNG)
+14|Because the names of cities in the dataset can not match the names in the Tableau. So enter the longitude and latitude to each city.|![](img/img16.PNG)
+15|Under <font color = blue>*Mark* pane, drag <font color = blue>*'Meninggal'*</font> which means deaths number to <font color = blue>*Color*</font>, <font color = blue>*Size*</font> and <font color = blue>*Label*</font>.|![](img/img19.PNG)
+16|Under <font color = blue>*Mark* pane, drag <font color = blue>*'Nama kecamatan'*</font> which means cities' names to <font color = blue>*Label*</font> and <font color = blue>*Tooltip*</font>.|![](img/img19.PNG)
+17|Under <font color = blue>*Mark*</font> pane, choose the <font color = blue>*circle shape*</font>.|![](img/img19.PNG)
+18|Drag <font color = blue>*"Nama Kota"*</font> which is the name of districts </font> as a layer.|![](img/img20.PNG)
+19|Under <font color = blue>*Mark*</font> pane, drag <font color = blue>*'Nama Kota'*</font> which means districts' names to <font color = blue>*Color*</font>.|![](img/img20.PNG)
+20|Drag <font color = blue>*'Nama Kota'*</font> which means districts' names to <font color = blue>*Filter*</font>.|![](img/img21.PNG)
+21|Choose <font color = blue>*"Show filter"*</font>.|![](img/img22.PNG)
+22|Choose <font color = blue>*"Single Value"*</font>.|![](img/img23.PNG)
+23|Drag <font color = blue>*'Meninggal'*</font> which means deaths number to <font color = blue>*Filter*</font>.|![](img/img24.PNG)
+24|Choose <font color = blue>*"Show filter"*</font>.|![](img/img22.PNG)
+25|For chart 2, give the graph title called 'Average number of cumulative positive cases per district at 30th June 2021, DKI Jakarta.'.|![](img/img25.PNG)
+26|Drag <font color = blue>*‘Positif’*</font> which means the positive cases to <font color = blue>*“Columns”*</font> and <font color = blue>*‘Nama Kota’*</font> to <font color = blue>*“Rows”*</font>.|![](img/img26.PNG)
+27|Drag <font color = blue>*'Nama Kota'*</font> which means districts' names to <font color = blue>*Filter*</font>.|![](img/img27.PNG)
+28|Choose <font color = blue>*"Show filter"*</font>.|![](img/img22.PNG)
+29|Choose <font color = blue>*"Single Value"*</font>.|![](img/img23.PNG)
+30|Create a new dashboard to combine these two graphs.|![](img/img28.PNG)

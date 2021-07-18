@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["img/img1.jpg","img/img2.PNG","img/img3.PNG","img/img4.png","makeover-3_files/anchor-4.2.2/anchor.min.js","makeover-3_files/bowser-1.9.3/bowser.min.js","makeover-3_files/distill-2.2.21/template.v2.js","makeover-3_files/jquery-1.11.3/jquery.min.js","makeover-3_files/popper-2.6.0/popper.min.js","makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","makeover-3_files/tippy-6.2.7/tippy-light-border.css","makeover-3_files/tippy-6.2.7/tippy.css","makeover-3_files/tippy-6.2.7/tippy.umd.min.js","makeover-3_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["img/img1.jpg","img/img10.PNG","img/img11.PNG","img/img12.PNG","img/img13.PNG","img/img14.PNG","img/img15.PNG","img/img16.PNG","img/img17.PNG","img/img18.png","img/img19.PNG","img/img2.PNG","img/img20.PNG","img/img21.PNG","img/img22.PNG","img/img23.PNG","img/img24.PNG","img/img25.PNG","img/img26.PNG","img/img27.PNG","img/img28.PNG","img/img3.PNG","img/img4.png","img/img5.PNG","img/img6.PNG","img/img7.PNG","img/img8.PNG","img/img9.PNG","makeover-3_files/anchor-4.2.2/anchor.min.js","makeover-3_files/bowser-1.9.3/bowser.min.js","makeover-3_files/distill-2.2.21/template.v2.js","makeover-3_files/jquery-1.11.3/jquery.min.js","makeover-3_files/popper-2.6.0/popper.min.js","makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","makeover-3_files/tippy-6.2.7/tippy-light-border.css","makeover-3_files/tippy-6.2.7/tippy.css","makeover-3_files/tippy-6.2.7/tippy.umd.min.js","makeover-3_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1563,6 +1563,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Please view the interactive visualization on Tableau Public <a href="https://public.tableau.com/app/profile/qian.ziwei/viz/Makeover2_16234698864380/Makeover2"><font color=grey><em>here</em>.</font></a></p>
 <h1 id="step-by-step-guide">4.0 Step-by-Step Guide</h1>
 <table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 28%" />
+<col style="width: 57%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>No</th>
@@ -1571,6 +1576,156 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>1</td>
+<td>Download the <em>Standar Kelurahan Data Corona (30 Juni 2021 Pukul 10.00)</em> from the Open Data Covid-19 Provinsi DKI Jakarta website. Load the excel file into Tableau Prep Builder. Drag the <font color = blue><em>‘data_kacamatan’</em></font> into main pane.</td>
+<td style="text-align: center;"><img src="img/img5.PNG" /></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Initiate the cleaning node from <font color = blue><em>‘data_kacamatan’</em></font> data node.</td>
+<td style="text-align: center;"><img src="img/img6.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Under the <font color = blue><em>‘Clean 1’</em></font> node,remove useless variables.</td>
+<td style="text-align: center;"><img src="img/img7.PNG" /></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Under <font color = blue><em>‘Clean 1’</em></font> node, filter the rows under <font color = blue><em>‘Nama_provinsi’</em></font> to choose <font color = blue><em>‘DKI Jakarta’</em></font>.</td>
+<td style="text-align: center;"><img src="img/img8.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Create a <font color = blue><em>‘Output’</em></font> node after <font color = blue><em>‘Clean 1’</em></font> node and save output as <font color = blue><em>‘Output’</em></font>.</td>
+<td style="text-align: center;"><img src="img/img9.PNG" /></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Import the data into Tableau.</td>
+<td style="text-align: center;"><img src="img/img10.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>For chart 1, give the graph title called ‘Cities with the number of cumulative deaths at 30th June 2021, DKI Jakarta’.</td>
+<td style="text-align: center;"><img src="img/img11.PNG" /></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Drag <font color = blue><em>‘Longitude(generated)’</em></font> to <font color = blue><em>“Columns”</em></font> and <font color = blue><em>‘Latitude(generated)’</em></font> to <font color = blue><em>“Rows”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img12.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Set the <font color = blue><em>“Nama Kota”</em></font> variable role as <font color = blue><em>“State/Province”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img14.PNG" /></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Set the <font color = blue><em>“Nama Kecamatan”</em></font> variable role as <font color = blue><em>“City”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img13.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Drag <font color = blue><em>“Nama Kecamatan”</em></font> which is the name of cities as a layer.</td>
+<td style="text-align: center;"><img src="img/img15.PNG" /></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Edit map location.</td>
+<td style="text-align: center;"><img src="img/img17.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Under the map location pane, choose the country as “Indonesia”.</td>
+<td style="text-align: center;"><img src="img/img18.png" /></td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Because the names of cities in the dataset can not match the names in the Tableau. So enter the longitude and latitude to each city.</td>
+<td style="text-align: center;"><img src="img/img16.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Under <font color = blue><em>Mark</em> pane, drag <font color = blue><em>‘Meninggal’</em></font> which means deaths number to <font color = blue><em>Color</em></font>, <font color = blue><em>Size</em></font> and <font color = blue><em>Label</em></font>.</td>
+<td style="text-align: center;"><img src="img/img19.PNG" /></td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Under <font color = blue><em>Mark</em> pane, drag <font color = blue><em>‘Nama kecamatan’</em></font> which means cities’ names to <font color = blue><em>Label</em></font> and <font color = blue><em>Tooltip</em></font>.</td>
+<td style="text-align: center;"><img src="img/img19.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Under <font color = blue><em>Mark</em></font> pane, choose the <font color = blue><em>circle shape</em></font>.</td>
+<td style="text-align: center;"><img src="img/img19.PNG" /></td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Drag <font color = blue><em>“Nama Kota”</em></font> which is the name of districts </font> as a layer.</td>
+<td style="text-align: center;"><img src="img/img20.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Under <font color = blue><em>Mark</em></font> pane, drag <font color = blue><em>‘Nama Kota’</em></font> which means districts’ names to <font color = blue><em>Color</em></font>.</td>
+<td style="text-align: center;"><img src="img/img20.PNG" /></td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Drag <font color = blue><em>‘Nama Kota’</em></font> which means districts’ names to <font color = blue><em>Filter</em></font>.</td>
+<td style="text-align: center;"><img src="img/img21.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>Choose <font color = blue><em>“Show filter”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img22.PNG" /></td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>Choose <font color = blue><em>“Single Value”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img23.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Drag <font color = blue><em>‘Meninggal’</em></font> which means deaths number to <font color = blue><em>Filter</em></font>.</td>
+<td style="text-align: center;"><img src="img/img24.PNG" /></td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>Choose <font color = blue><em>“Show filter”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img22.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>For chart 2, give the graph title called ‘Average number of cumulative positive cases per district at 30th June 2021, DKI Jakarta.’.</td>
+<td style="text-align: center;"><img src="img/img25.PNG" /></td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>Drag <font color = blue><em>‘Positif’</em></font> which means the positive cases to <font color = blue><em>“Columns”</em></font> and <font color = blue><em>‘Nama Kota’</em></font> to <font color = blue><em>“Rows”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img26.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>Drag <font color = blue><em>‘Nama Kota’</em></font> which means districts’ names to <font color = blue><em>Filter</em></font>.</td>
+<td style="text-align: center;"><img src="img/img27.PNG" /></td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>Choose <font color = blue><em>“Show filter”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img22.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>Choose <font color = blue><em>“Single Value”</em></font>.</td>
+<td style="text-align: center;"><img src="img/img23.PNG" /></td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>Create a new dashboard to combine these two graphs.</td>
+<td style="text-align: center;"><img src="img/img28.PNG" /></td>
+</tr>
 </tbody>
 </table>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
