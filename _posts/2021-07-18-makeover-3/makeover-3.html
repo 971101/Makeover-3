@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["img/img1.jpg"]}
+  {"type":"character","attributes":{},"value":["img/img1.jpg","img/img2.PNG","img/img3.PNG","img/img4.png","makeover-3_files/anchor-4.2.2/anchor.min.js","makeover-3_files/bowser-1.9.3/bowser.min.js","makeover-3_files/distill-2.2.21/template.v2.js","makeover-3_files/jquery-1.11.3/jquery.min.js","makeover-3_files/popper-2.6.0/popper.min.js","makeover-3_files/tippy-6.2.7/tippy-bundle.umd.min.js","makeover-3_files/tippy-6.2.7/tippy-light-border.css","makeover-3_files/tippy-6.2.7/tippy.css","makeover-3_files/tippy-6.2.7/tippy.umd.min.js","makeover-3_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1496,58 +1496,69 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <h1 id="critique-of-visualization">1.0 Critique of Visualization</h1>
 <p>The original visualization can be seen below.</p>
-<p><img src="img/68.PNG" /></p>
+<p>The first graph:</p>
+<p><img src="img/img3.PNG" /></p>
+<p>The second graph:</p>
+<p><img src="img/img4.png" /></p>
 <h3 id="clarity">1.1 Clarity</h3>
 <ol type="1">
-<li><p>The title of the graph does not convey the intent of the graph well.</p>
+<li>The title of the graph does not convey the intent of the graph well.</li>
+</ol>
+<p>The first graph:</p>
 <ul>
-<li>The first graph
+<li><p>The title indicates the content of the chart is top five districts with the highest number of cumulative deaths, but in fact the chart presents the number of cumulative deaths in all 44 cities.</p></li>
+<li><p>These areas in the graph are better to called cities, not districts.</p></li>
+</ul>
+<p>The second graph:</p>
 <ul>
-<li>The title indicates the content of the chart is top five districts with the hightest number of cumulative deaths, but in fact the chart presents the number of cumulative deaths in all 44 cities.</li>
-<li>These areas in the graph are better to called cities, not districts.</li>
-</ul></li>
-<li>The second graph
+<li>The areas in the second graphs are better to called districts.</li>
+</ul>
+<p>Both two graphs</p>
 <ul>
-<li>The areas in the second graphs are better to called stricts.</li>
-</ul></li>
-</ul></li>
-<li><p>The content of the graph</p>
+<li>There should be a connection between the two graphs.</li>
+</ul>
+<ol start="2" type="1">
+<li>The content of the graph</li>
+</ol>
+<p>The first graph: data</p>
 <ul>
-<li>The first graph: data
-<ul>
-<li>Maps for charts with geographical information is more appropriate.</li>
-<li>It is difficult for readers to get useful information from the graph. Cannot compare the data of each city well.</li>
-</ul></li>
-<li>The first graph: annotate
+<li><p>Maps for charts with geographical information is more appropriate.</p></li>
+<li><p>It is difficult for readers to get useful information from the graph. Cannot compare the data of each city well.</p></li>
+</ul>
+<p>The first graph: annotate</p>
 <ul>
 <li>Although the graph is marked name of top five cities, it does not show the exact number of deaths in the five cities.</li>
-</ul></li>
-</ul></li>
-</ol>
+</ul>
 <h3 id="aesthetic">1.2 Aesthetic</h3>
-<pre><code>+ The first graph: data
-
-1.On the y-axis are the names of 44 cities, which are too complicated.
-
-2.Comments are too focused and don&#39;t provide useful information.
-
-3.The choice to use dots as shape leaves too much white space throughout the chart.</code></pre>
+<p>The first graph:</p>
+<ul>
+<li><p>On the y-axis are the names of 44 cities, which are too complicated.</p></li>
+<li><p>Comments are too focused and don’t provide useful information.</p></li>
+<li><p>The choice to use dots as shape leaves too much white space throughout the chart.</p></li>
+</ul>
 <h1 id="alternative-design">2.0 Alternative Design</h1>
 <p>The proposed design is as follows.</p>
 <p><img src="img/img1.jpg" /></p>
 <h3 id="clarity-1">2.1 Clarity</h3>
-<ol type="1">
-<li>Use <font color=blue><em>‘Title’</em></font> and <font color=blue><em>‘Subtitle’</em></font> to tell readers the objectives of different graphs in the dashboard.</li>
-<li>Add note under the graph to indicate the unit of the number.</li>
-</ol>
+<p>The first graph:</p>
+<ul>
+<li><p>Use the appropriate chart type. Use the map as the graph background and add dots of the cities cumulative deaths on the map.</p></li>
+<li><p>Change the title of the graph: “Cities with the number of cumulative deaths at 30th June 2021, DKI Jakarta”.</p></li>
+<li><p>Set the number of cumulative deaths as the color and size of circles in the graph to help readers to compare the cumulative deaths of cities.</p></li>
+<li><p>Add the districts of DKI Jakarta as the filter, so we can compare the difference cumulative deaths of different districts. And also connect to the second graph.</p></li>
+<li><p>Use the number of cities cumulative deaths and names of cities as the label to help readers compare.</p></li>
+</ul>
+<p>The second graph:</p>
+<ul>
+<li>Change the title of the graph: “Average number of cumulative positive cases per district at 30th June 2021, DKI Jakarta”.</li>
+</ul>
 <h3 id="aesthetic-1">2.2 Aesthetic</h3>
-<ol type="1">
-<li>Use simple color <font color=blue><em>‘Red’</em></font> and <font color=blue><em>‘Blue’</em></font> to indicate the difference of types. It will be easy to read.</li>
-<li>Remove the unnecessary icons in the graphs.</li>
-<li>Add useful information in <strong>“Tooltip”</strong>.</li>
-<li>Show the range of the using data in the graph title.</li>
-<li>Create a new graph called ‘Change of Net export value of <Region> from 2011 to 2020’ to show the information in the original blue background annotate.</li>
-</ol>
+<p>The first graph:</p>
+<ul>
+<li><p>Use the appropriate chart type. Use the map as the graph background and add dots of the cities cumulative deaths on the map. It will be easy to read.</p></li>
+<li><p>Set the number of cumulative deaths as the color and size of circles. Don’t leave too much space in the graph.</p></li>
+<li><p>Use the number of cities cumulative deaths and names of cities as the label.</p></li>
+</ul>
 <h1 id="proposed-visualization">3.0 Proposed Visualization</h1>
 <p>Please view the interactive visualization on Tableau Public <a href="https://public.tableau.com/app/profile/qian.ziwei/viz/Makeover2_16234698864380/Makeover2"><font color=grey><em>here</em>.</font></a></p>
 <h1 id="step-by-step-guide">4.0 Step-by-Step Guide</h1>
@@ -1562,7 +1573,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <tbody>
 </tbody>
 </table>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
