@@ -1,0 +1,77 @@
+---
+title: "DataViz Makeover 3"
+description: |
+  DataViz Makeover 3 for ISSS608: Visual Analytics.
+author:
+  - name: Qian Ziwei
+    url: https://example.com/norajones
+date: 06-10-2021
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    theme: united
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# 1.0 Critique of Visualization
+The original visualization can be seen below.
+
+![](img/68.PNG)
+
+### 1.1 Clarity
+1. The title of the graph does not convey the intent of the graph well.
+
+    + The first graph 
+        + The title indicates the content of the chart is top five districts with the hightest number of cumulative deaths, but in fact the chart presents the number of cumulative deaths in all 44 cities.
+        + These areas in the graph are better to called cities, not districts.
+    + The second graph
+        + The areas in the second graphs are better to called stricts.
+
+2. The content of the graph
+
+    + The first graph: data
+        + Maps for charts with geographical information is more appropriate.
+        + It is difficult for readers to get useful information from the graph. Cannot compare the data of each city well.
+    + The first graph: annotate
+        + Although the graph is marked name of top five cities, it does not show the exact number of deaths in the five cities.
+
+### 1.2 Aesthetic
+
+    + The first graph: data
+
+    1.On the y-axis are the names of 44 cities, which are too complicated.
+
+    2.Comments are too focused and don't provide useful information.
+
+    3.The choice to use dots as shape leaves too much white space throughout the chart.
+
+# 2.0 Alternative Design
+The proposed design is as follows.
+
+![](img/img1.jpg)
+
+### 2.1 Clarity
+1. Use <font color=blue>*'Title'*</font> and <font color=blue>*'Subtitle'*</font> to tell readers the objectives of different graphs in the dashboard.
+2. Add note under the graph to indicate the unit of the number.
+
+### 2.2 Aesthetic
+1. Use simple color <font color=blue>*'Red'*</font> and <font color=blue>*'Blue'*</font> to indicate the difference of types. It will be easy to read.
+2. Remove the unnecessary icons in the graphs.
+3. Add useful information in **"Tooltip"**.
+4. Show the range of the using data in the graph title.
+5. Create a new graph called 'Change of Net export value of <Region> from 2011 to 2020' to show the information in the original blue background annotate.
+
+# 3.0 Proposed Visualization
+Please view the interactive visualization on Tableau Public [<font color=grey>*here*.</font>](https://public.tableau.com/app/profile/qian.ziwei/viz/Makeover2_16234698864380/Makeover2)
+
+# 4.0 Step-by-Step Guide
+|No|Step| Action |
+|--|----|:------:|
+
+
